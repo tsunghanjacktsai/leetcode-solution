@@ -12,16 +12,12 @@ public class RomanToInteger {
 	}
 
 	public static int romantoInt(String s) {
-		//�N�r�Ŧ곣���ন�j�g�r��
 		String str = s.toUpperCase();
 		
-		//�N�r�Ŧ���Ѭ��Ʋ�
 		String[] arr = str.split("");
 		
-		//�Ы� int �����ƲեH��J�����Ʀr
 		int[] nums = new int[arr.length];
 		
-		//�n���U�Ÿ��ҹ����Ʀr
 		for(int i = 0; i < arr.length; i++) {
 			
 			switch (arr[i]) {
@@ -56,7 +52,6 @@ public class RomanToInteger {
 	}
 
 	public static int numSum(int[] nums) {
-		//�p��Ʋդ��U�Ʀr���M
 		int sum = 0;
 		
 		for(int i = 0; i < nums.length - 1; i++) {
@@ -69,10 +64,8 @@ public class RomanToInteger {
 				sum += nums[i];
 			}
 		}
-		//�[�W���`���쪺��
 		int newSum = sum + nums[nums.length - 1];
 		
-		//����d�� 1-3999
 		if(newSum >= 4000) {
 			return -1;
 		}
