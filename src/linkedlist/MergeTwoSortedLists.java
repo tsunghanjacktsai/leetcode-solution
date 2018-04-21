@@ -7,12 +7,10 @@ public class MergeTwoSortedLists {
 	}
 	
 	public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-		//�p�G���Ū�h��^��
 		if(l1 == null && l2 == null) {
 			
 			return l1;
 		}
-		//�Ыطs���öǤJ��
 		ListNode l3 = new ListNode(-1);
 		ListNode result = l3;
 		
