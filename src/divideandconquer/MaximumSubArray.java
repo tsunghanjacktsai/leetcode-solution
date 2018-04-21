@@ -13,9 +13,7 @@ public class MaximumSubArray {
 		int sum = 0;
 		
 		for(int x = 0; x < nums.length; x++) {
-			//�p�G�ۥ[�᪺�Ʀr�p�� 0�A�h��^���Ʀr�ç@�������V�W�֥[�A�p�G���p�� 0�A�h�~��֥[
 			sum = sum < 0 ? sum = nums[x] : sum + nums[x];
-			//����ño�X�̤j��
 			max = Math.max(max, sum);
 		}
 		
