@@ -12,7 +12,6 @@ public class SearchInsertPosition {
 	}
 	
 	public static int searchInsert(int[] nums, int target) {
-		//��l�Ƥ@���ܶq�H�����ؼмƦr
 		int result = 0;
 		
 		for(int x = 0; x < nums.length; x++) {
