@@ -24,11 +24,11 @@ public class TwoSum {
 
 	public static int[] twoSum(int[] nums, int target) {
 
-		for (int x = 1; x < nums.length; x++) {// �Ѩ��Ь�0�������}�l�`���A����`�����
+		for (int x = 1; x < nums.length; x++) {
 
-			for (int y = x + 1; y < nums.length; y++) {// �ѥ~�`���`���쪺�������᭱�@�Ӥ����}�l�`��
+			for (int y = x + 1; y < nums.length; y++) {
 
-				if (target - nums[x] == nums[y]) {// �N�ؼЭȴ�h�~�`���`���쪺�����A�p�G���󦹤������᪺�Y�@�����h��^�s�åB�˦�x, y�������Ʋ�
+				if (target - nums[x] == nums[y]) {
 					return new int[] { x, y };
 				}
 			}
