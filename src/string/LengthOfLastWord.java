@@ -10,9 +10,7 @@ public class LengthOfLastWord {
 	}
 	
 	public static int lengthOfLastWord(String s) {
-		//�N�r�Ŧ��Y����ݪ��Ů�h��
 		String str = s.trim();
-		//�r�Ŧ���״�h�Ů�̫�X�{���a��Y���̫���������
 		int length = str.length() - str.lastIndexOf(' ') - 1;
 		return length;
 	}
