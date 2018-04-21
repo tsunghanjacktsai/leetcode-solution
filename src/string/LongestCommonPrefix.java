@@ -11,12 +11,10 @@ public class LongestCommonPrefix {
 	}
 
 	public static String longestCommonPrefix(String[] strs) {
-		//�p�G�Ʋլ��ūh��^�ŭ�
 		if (strs.length == 0) {
 			return "";
 		}
 		
-		//�P�_�̪��r�Ŧ���שM��Ҧb��m
 		int max = 0;
 		int pos_max = 0;
 		for (int x = 0; x < strs.length; x++) {
@@ -27,7 +25,6 @@ public class LongestCommonPrefix {
 			}
 		}
 		
-		//�Ѫ��r�Ŧꪺ�r�ųv�@�Y�p�d��d�򪽨���۲ūe��r����
 		String it = strs[pos_max];
 		for (int i = max; i >= 0; i--) {
 			String substring = it.substring(0, i);
