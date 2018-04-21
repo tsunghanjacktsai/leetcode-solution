@@ -11,7 +11,6 @@ public class CountAndSay {
 	}
 	
 	public static String countAndSay(int n) {
-		//��J�Ʀr���o�p�� 1
 		if(n < 1) {
 			return "";
 		}
@@ -25,7 +24,6 @@ public class CountAndSay {
 	}
 
 	public static String countAndSay(String str) {
-		//�U�Ʀr�P�e�@�����A�p�ۦP�A�h�O���ܶq���W
 		StringBuilder sb = new StringBuilder();
 		int count = 1;
 
