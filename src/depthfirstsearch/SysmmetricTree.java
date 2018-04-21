@@ -35,7 +35,7 @@ public class SysmmetricTree {
 		q.add(root.left);
 		q.add(root.right);
 		while(q.size() > 1) {
-			TreeNode left = q.poll(); //������C�������ñN���q�춤�C�R��
+			TreeNode left = q.poll(); 
 			TreeNode right = q.poll();
 			if(left == null && right == null) {
 				continue;
