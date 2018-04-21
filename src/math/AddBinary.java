@@ -10,12 +10,9 @@ public class AddBinary {
 	}
 	
 	public static String addBinary(String a, String b) {
-		//��l�Ʈe��
 		StringBuilder builder = new StringBuilder();
-		//�ѫ᩹�e�M��
 		int x = a.length() - 1;
 		int y = b.length() - 1;
-		//��l���ܶq�s��i��
 		int carry = 0;
 		while(x >= 0 || y >= 0 || carry == 1) {
 			int digit_1 = x < 0 ? 0 : a.charAt(x--) - '0';
