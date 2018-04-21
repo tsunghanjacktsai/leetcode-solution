@@ -15,10 +15,8 @@ public class PalindromeNumber {
 	
 	public static boolean isPalindrome(int x) {
 		
-		//�N�Ʀr���Ѭ��Ʋ�
 		String str = Integer.toString(x);
 		String[] arr = str.split("");
-		//�N�Ʋդ���
 		String[] newArr  = swap(arr);
 		
 		StringBuilder sb = new StringBuilder();
@@ -36,7 +34,6 @@ public class PalindromeNumber {
 			return false;
 		}
 		
-		//�P�_�Ʋդ����O�_�P����e�ۦP
 		for(int i = 0; i < newArr.length; i++) {
 			
 			if(!(newArr[i].equals(arr[i]))) {
@@ -47,7 +44,6 @@ public class PalindromeNumber {
 	}
 	
 	public static boolean isPalindrome_2(int x) {
-		//�^��Ƥ��o���t�ƥB���o���H0����(10 ������)
 		if (x<0 || (x!=0 && x%10==0)) 
 			return false;
 		
@@ -60,7 +56,6 @@ public class PalindromeNumber {
 	    return (x == num || x == num/10);
 	}
 
-	//����r�Ŧ�Ʋ�
 	public static String[] swap(String[] arr) {
 		String[] newArr = new String[arr.length];
 		
