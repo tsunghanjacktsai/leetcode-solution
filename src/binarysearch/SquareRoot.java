@@ -1,12 +1,6 @@
 package binarysearch;
 
 public class SquareRoot {
-
-	public static void main(String[] args) {
-	    for ( int i = 0; i <= 10; i++ ) {  
-	        System.out.println(i + " : " + mySqrt(i));  
-	    } 		
-	}
 	
 	public static int mySqrt(int x) {
 		if(x < 4) {
@@ -17,5 +11,11 @@ public class SquareRoot {
 			return result + 1;
 		}
 		return result;
+	}
+	
+	public static void main(String[] args) {
+	    for ( int i = 0; i <= 10; i++ ) {  
+	        System.out.println(i + " : " + mySqrt(i));  
+	    } 		
 	}
 }
