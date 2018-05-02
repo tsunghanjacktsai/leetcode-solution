@@ -1,17 +1,6 @@
 package math;
 
 public class PalindromeNumber {
-
-	public static void main(String[] args) {
-
-		int x = 101;
-		
-		boolean b = isPalindrome(x);
-		boolean b2 = isPalindrome_2(x);
-		
-		System.out.println(b);
-		System.out.println(b2);
-	}
 	
 	public static boolean isPalindrome(int x) {
 		
@@ -64,5 +53,16 @@ public class PalindromeNumber {
 			newArr[i] = arr[arr.length - i - 1];
 		}
 		return newArr;
+	}
+	
+	public static void main(String[] args) {
+
+		int x = 101;
+		
+		boolean b = isPalindrome(x);
+		boolean b2 = isPalindrome_2(x);
+		
+		System.out.println(b);
+		System.out.println(b2);
 	}
 }
