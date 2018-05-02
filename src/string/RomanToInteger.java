@@ -2,15 +2,6 @@ package string;
 
 public class RomanToInteger {
 
-	public static void main(String[] args) {
-
-		String s = "cd";
-		
-		int x = romantoInt(s);
-		
-		System.out.println(x);
-	}
-
 	public static int romantoInt(String s) {
 		String str = s.toUpperCase();
 		
@@ -70,5 +61,14 @@ public class RomanToInteger {
 			return -1;
 		}
 		return newSum;
+	}
+	
+	public static void main(String[] args) {
+
+		String s = "cd";
+		
+		int x = romantoInt(s);
+		
+		System.out.println(x);
 	}
 }
