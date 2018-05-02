@@ -1,17 +1,6 @@
 package math;
 
 public class ReverseInteger {
-
-	public static void main(String[] args) {
-
-		int x = -2147483648;
-		int reverseNum = reverse(x);
-		int reverseNum_2 = reverse_2(x);
-		
-		System.out.println(reverseNum);
-		System.out.println(reverseNum_2);
-		
-	}
 	
 	public static int reverse(int x) {
 		
@@ -67,5 +56,16 @@ public class ReverseInteger {
 			newArr[i] = arr[arr.length - i - 1];
 		}
 		return newArr;
+	}
+	
+	public static void main(String[] args) {
+
+		int x = -2147483648;
+		int reverseNum = reverse(x);
+		int reverseNum_2 = reverse_2(x);
+		
+		System.out.println(reverseNum);
+		System.out.println(reverseNum_2);
+		
 	}
 }
