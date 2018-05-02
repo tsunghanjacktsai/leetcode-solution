@@ -4,24 +4,6 @@ import java.util.HashMap;
 
 public class TwoSum {
 
-	public static void main(String[] args) {
-
-		int[] nums = { 2, 7, 11, 15 };
-		int target = 9;
-		int[] ans = twoSum(nums, target);
-		int[] ans_2 = twoSum_2(nums, target);
-
-		for (int i = 0; i < ans.length; i++) {
-			System.out.print(ans[i] + " ");
-		}
-
-		System.out.println();
-
-		for (int i = 0; i < ans_2.length; i++) {
-			System.out.print(ans_2[i] + " ");
-		}
-	}
-
 	public static int[] twoSum(int[] nums, int target) {
 
 		for (int x = 1; x < nums.length; x++) {
@@ -49,5 +31,23 @@ public class TwoSum {
 			}
 		}
 		return new int[] {0, 0};
+	}
+	
+	public static void main(String[] args) {
+
+		int[] nums = { 2, 7, 11, 15 };
+		int target = 9;
+		int[] ans = twoSum(nums, target);
+		int[] ans_2 = twoSum_2(nums, target);
+
+		for (int i = 0; i < ans.length; i++) {
+			System.out.print(ans[i] + " ");
+		}
+
+		System.out.println();
+
+		for (int i = 0; i < ans_2.length; i++) {
+			System.out.print(ans_2[i] + " ");
+		}
 	}
 }
