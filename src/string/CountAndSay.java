@@ -1,14 +1,6 @@
 package string;
 
 public class CountAndSay {
-
-	public static void main(String[] args) {
-
-		int n = 1;
-		String output = countAndSay(n);
-		
-		System.out.println(output);
-	}
 	
 	public static String countAndSay(int n) {
 		if(n < 1) {
@@ -42,5 +34,13 @@ public class CountAndSay {
 		sb.append(str.charAt(str.length() - 1));
 		
 		return sb.toString();
+	}
+	
+	public static void main(String[] args) {
+
+		int n = 1;
+		String output = countAndSay(n);
+		
+		System.out.println(output);
 	}
 }
