@@ -2,14 +2,6 @@ package string;
 
 public class LongestCommonPrefix {
 
-	public static void main(String[] args) {
-
-		String[] arr = { "abd", "abc", "abb" };
-		String s = longestCommonPrefix(arr);
-
-		System.out.println(s);
-	}
-
 	public static String longestCommonPrefix(String[] strs) {
 		if (strs.length == 0) {
 			return "";
@@ -40,5 +32,13 @@ public class LongestCommonPrefix {
 			}
 		}
 		return "";
+	}
+	
+	public static void main(String[] args) {
+
+		String[] arr = { "abd", "abc", "abb" };
+		String s = longestCommonPrefix(arr);
+
+		System.out.println(s);
 	}
 }
