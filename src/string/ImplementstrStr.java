@@ -1,15 +1,6 @@
 package string;
 
 public class ImplementstrStr {
-
-	public static void main(String[] args) {
-
-		String hayStack = "hello";
-		String needle = "ll";
-		int result = strStr(hayStack, needle);
-		
-		System.out.println(result);
-	}
 	
 	public static int strStr(String haystack, String needle) {
 		
@@ -29,4 +20,12 @@ public class ImplementstrStr {
 		return -1;
 	}
 
+	public static void main(String[] args) {
+
+		String hayStack = "hello";
+		String needle = "ll";
+		int result = strStr(hayStack, needle);
+		
+		System.out.println(result);
+	}
 }
