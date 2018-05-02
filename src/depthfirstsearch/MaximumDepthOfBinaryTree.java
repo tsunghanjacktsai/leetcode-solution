@@ -1,10 +1,6 @@
 package tree;
 
 public class MaximumDepthOfBinaryTree {
-
-	public static void main(String[] args) {
-		
-	}
 	
 	public static int maxDepth(TreeNode root) {
 		if(root == null) {
