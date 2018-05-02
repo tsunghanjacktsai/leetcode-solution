@@ -1,18 +1,6 @@
 package linkedlist;
 
 public class RemoveDuplicatesFromSortedList {
-
-	public static void main(String[] args) {
-		ListNode list = new ListNode(1);
-		list.next.val = 2;
-		list.next.val = 2;
-		list.next.val = 3;
-		
-		while(list != null) {
-			System.out.print(list.val + ",");
-			list = list.next;
-		}
-	}
 	
 	public static ListNode deleteDuplicates(ListNode head) {
 		ListNode list = head;
@@ -28,5 +16,17 @@ public class RemoveDuplicatesFromSortedList {
 			}
 		}
 		return head;
+	}
+	
+	public static void main(String[] args) {
+		ListNode list = new ListNode(1);
+		list.next.val = 2;
+		list.next.val = 2;
+		list.next.val = 3;
+		
+		while(list != null) {
+			System.out.print(list.val + ",");
+			list = list.next;
+		}
 	}
 }
