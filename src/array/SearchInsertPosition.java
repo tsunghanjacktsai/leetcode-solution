@@ -3,15 +3,6 @@ package array;
 
 public class SearchInsertPosition {
 
-	public static void main(String[] args) {
-
-		int[] nums = {1, 3, 5, 7};
-		int target = 6;
-		int result = searchInsert(nums, target);
-		
-		System.out.println(result);
-	}
-	
 	public static int searchInsert(int[] nums, int target) {
 		int result = 0;
 		
@@ -25,5 +16,14 @@ public class SearchInsertPosition {
 			}
 		}
 		return result;
+	}
+	
+	public static void main(String[] args) {
+
+		int[] nums = {1, 3, 5, 7};
+		int target = 6;
+		int result = searchInsert(nums, target);
+		
+		System.out.println(result);
 	}
 }
