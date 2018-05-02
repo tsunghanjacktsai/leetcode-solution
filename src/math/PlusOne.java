@@ -3,12 +3,6 @@ package math;
 import java.util.Arrays;
 
 public class PlusOne {
-
-	public static void main(String[] args) {
-		int[] digits = {10};
-		int[] nums = plusOne(digits);
-		System.out.println(Arrays.toString(nums));
-	}
 	
 	public static int[] plusOne(int[] digits) {
 		for(int x = digits.length - 1; x >= 0; x--) {
@@ -22,5 +16,11 @@ public class PlusOne {
 		nums[0] = 1;
 		
 		return nums;
+	}
+	
+	public static void main(String[] args) {
+		int[] digits = {10};
+		int[] nums = plusOne(digits);
+		System.out.println(Arrays.toString(nums));
 	}
 }
