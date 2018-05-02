@@ -5,10 +5,6 @@ import java.util.Queue;
 
 public class SysmmetricTree {
 
-	public static void main(String[] args) {
-		
-	}
-
 	public static boolean isSymmetric(TreeNode root) {
 		if(root == null) {
 			return true;
