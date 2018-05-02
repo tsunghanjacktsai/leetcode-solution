@@ -2,11 +2,6 @@ package dynamicprogramming;
 
 public class ClimbingStairs {
 	
-	public static void main(String[] args) {
-		int result = climbStairs_2(44);
-		System.out.println(result);
-	}
-	
 	public static int climbStairs(int n) {
 		if(n < 0) {
 			return 0;
@@ -41,5 +36,10 @@ public class ClimbingStairs {
 	        store[i] = store[i-1] + store[i-2];
 	        
 	    return store[n-1];
+	}
+		
+	public static void main(String[] args) {
+		int result = climbStairs_2(44);
+		System.out.println(result);
 	}
 }
