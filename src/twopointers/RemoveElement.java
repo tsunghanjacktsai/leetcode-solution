@@ -1,14 +1,6 @@
 package twopointers;
 
 public class RemoveElement {
-
-	public static void main(String[] args) {
-
-		int[] nums = {3, 2, 2, 3};
-		int length = removeElement(nums, 3);
-		
-		System.out.println(length);
-	}
 	
 	public static int removeElement(int[] nums, int val) {
 		
@@ -26,4 +18,11 @@ public class RemoveElement {
 		return count;
 	}
 
+	public static void main(String[] args) {
+
+		int[] nums = {3, 2, 2, 3};
+		int length = removeElement(nums, 3);
+		
+		System.out.println(length);
+	}
 }
